@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>hara_templete_4</name>
+	<creationDate>29.10.2011</creationDate>
+	<author>ilia paev</author>
+	<authorEmail>funordie@gmail.com</authorEmail>
+	<authorUrl>http://www.funordie.hit.bg</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<version>2.8.0</version>
+	<description>Hara School Site</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+
+		<folder>images</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>flash</folder>
+		
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+	<params>
+	</params>
+</install>
