@@ -47,8 +47,8 @@ function PrintTemplateName(){
   <tr>
     	<td rowspan="3" background="/templates/<?php PrintTemplateName()?>/images/2.gif" >
     <img style="WIDTH: 94px; HEIGHT: 127px" height=92 alt="" src="/templates/<?php PrintTemplateName() ?>/images/06.gif" width=88 border=0>
-    <a href="mailto:burborani@gmail.com?Subject=Информация относно подпомагане на сайта"><img src="/templates/<?php PrintTemplateName() ?>/images/hara_add.png"></a>
-  </td>
+    <a href="mailto:burborani@gmail.com?Subject=Информация относно подпомагане на сайта"><img src="/templates/<?php PrintTemplateName() ?>/images/hara_add.png" width="160"></a>
+</td>
         <td width=500 height=53 background="/templates/<?php PrintTemplateName() ?>/images/3.gif"></td>
         <td width="250" rowspan="3"  background="/templates/<?php PrintTemplateName() ?>/images/main_image.jpg"></td>
   <tr>
