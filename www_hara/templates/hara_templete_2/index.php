@@ -15,41 +15,51 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
+
+<?php
+function PrintTemplateName(){
+	$app = & JFactory::getApplication(); 
+	$template = $app->getTemplate(); 
+	echo $template;
+}
+?>
 <head>
 <jdoc:include type="head" />
 
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/hara_templete_2/css/template.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/hara_templete_2/css/hara.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php PrintTemplateName() ?>/css/template.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php PrintTemplateName() ?>/css/hara.css" type="text/css" />
 
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 <?php if($this->direction == 'rtl') : ?>
-	<link href="<?php echo $this->baseurl ?>/templates/hara_templete_2/css/template_rtl.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $this->baseurl ?>/templates/<?php PrintTemplateName() ?>/css/template_rtl.css" rel="stylesheet" type="text/css" />
 <?php endif; ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 </head>
-<body background="/templates/hara_templete_2/images/1.gif">
+<body background="/templates/<?php PrintTemplateName() ?>/images/1.gif">
 
 <table cellSpacing=0 cellPadding=0 width="100%" border=0>
   <tbody>
   <tr>
-    	<td rowspan="3" background="/templates/hara_templete_2/images/2.gif" >
-    <img style="WIDTH: 94px; HEIGHT: 127px" height=92 alt="" src="/templates/hara_templete_2/images/06.gif" width=88 border=0></td>
-        <td width=500 height=53 background="/templates/hara_templete_2/images/3.gif"></td>
-        <td width="250" rowspan="3"  background="/templates/hara_templete_2/images/main_image.jpg"></td>
+    	<td width="94" rowspan="3" background="/templates/<?php PrintTemplateName()?>/images/2.gif" >
+  <img style="WIDTH: 94px; HEIGHT: 127px" height=92 alt="" src="/templates/<?php PrintTemplateName() ?>/images/06.gif" width=88 border=0></td>
+    	<td rowspan="3" background="/templates/<?php PrintTemplateName()?>/images/2.gif" >
+      <jdoc:include type="modules" name="adds" /></td>
+        <td width=500 height=53 background="/templates/<?php PrintTemplateName() ?>/images/3.gif"></td>
+        <td width="300" rowspan="3" background="/templates/<?php PrintTemplateName() ?>/images/main_image.jpg"></td>
   <tr>
-    	<td width=500 height=120 align="center" valign="middle" background="/templates/hara_templete_2/images/6.gif" class="main_Title" >
+    	<td width=500 height=120 align="center" valign="middle" background="/templates/<?php PrintTemplateName() ?>/images/6.gif" class="main_Title" >
         2-ри клас</td>
   </tr>
     <tr>
-    	<td width=500 height=77 background="/templates/hara_templete_2/images/7.gif"></td>
+    	<td width=500 height=77 background="/templates/<?php PrintTemplateName() ?>/images/7.gif"></td>
     </tr>
     <tr>
-      <td height="35" colspan="2">
+      <td height="35" colspan="3">
       <div id="pathway">
 			<jdoc:include type="modules" name="breadcrumb" />
 		</div>
@@ -59,35 +69,35 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
       </td>
     </tr>
     <tr>
-      <td height="77" colspan="3">
+      <td height="77" colspan="4">
       <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
   <tbody>
   <tr align="left" valign="top">
     <td width="200" align="left" valign="top"><p class="hara_menu_left">&nbsp;</p>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td class="menu_caption" height="31" background="/templates/hara_templete_2/images/13.gif">Меню на сайта</td>
+        <td class="menu_caption" height="31" background="/templates/<?php PrintTemplateName() ?>/images/13.gif">Меню на сайта</td>
         </tr>
       <tr>
-        <td class="menu_left" background="/templates/hara_templete_2/images/14.gif">
+        <td class="menu_left" background="/templates/<?php PrintTemplateName() ?>/images/14.gif">
             <jdoc:include type="modules" name="left" style="rounded" />
         </td>
       <tr>
-        <td height="64" background="/templates/hara_templete_2/images/15.gif"></td>
+        <td height="64" background="/templates/<?php PrintTemplateName() ?>/images/15.gif"></td>
         </tr>
       </table>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td height="31" background="/templates/hara_templete_2/images/13.gif"></td>
+        <td height="31" background="/templates/<?php PrintTemplateName() ?>/images/13.gif"></td>
       </tr>
       <tr>
-        <td align="center" background="/templates/hara_templete_2/images/14.gif">
-        <p><a href="mailto:burborani@gmail.com"><img src="/templates/hara_templete_2/images/mail.jpg" alt="mail" border="0" /></a></p>
+        <td align="center" background="/templates/<?php PrintTemplateName() ?>/images/14.gif">
+        <p><a href="mailto:burborani@gmail.com"><img src="/templates/<?php PrintTemplateName() ?>/images/mail.jpg" alt="mail" border="0" /></a></p>
           <p><a href="mailto:burborani@gmail.com">За контакти <br />
           e-mail: burborani@gmail.com</a></p>
           <p>
             <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="152" height="152" id="FlashID" title="clock">
-              <param name="movie" value="/templates/hara_templete_2/flash/analogclock.swf" />
+              <param name="movie" value="/templates/<?php PrintTemplateName() ?>/flash/analogclock.swf" />
               <param name="quality" value="high" />
               <param name="wmode" value="opaque" />
               <param name="swfversion" value="6.0.65.0" />
@@ -95,7 +105,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
               <param name="expressinstall" value="../Scripts/expressInstall.swf" />
               <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
               <!--[if !IE]>-->
-              <object data="/templates/hara_templete_2/flash/analogclock.swf" type="application/x-shockwave-flash" width="152" height="152"
+              <object data="/templates/<?php PrintTemplateName() ?>/flash/analogclock.swf" type="application/x-shockwave-flash" width="152" height="152"
                <!--<![endif]-->
                 <param name="quality" value="high" />
                 <param name="wmode" value="opaque" />
@@ -113,7 +123,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
           </p></td>
       </tr>
       <tr>
-        <td height="64" background="/templates/hara_templete_2/images/15.gif"></td>
+        <td height="64" background="/templates/<?php PrintTemplateName() ?>/images/15.gif"></td>
       </tr>
     </table>
       <p>&nbsp;</p>      </td>
@@ -144,7 +154,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
   </td>
     </tr>
     <tr>
-      <td height="35" colspan="3">
+      <td height="35" colspan="4">
         <jdoc:include type="modules" name="footer" style="xhtml"/>
       </td>
     </tr>
