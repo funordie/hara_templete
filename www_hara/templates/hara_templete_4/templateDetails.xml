@@ -2,14 +2,14 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <install version="1.5" type="template">
 	<name>hara_templete_4</name>
-	<creationDate>29.10.2011</creationDate>
+	<creationDate>21/11/2012</creationDate>
 	<author>ilia paev</author>
 	<authorEmail>funordie@gmail.com</authorEmail>
 	<authorUrl>http://www.funordie.hit.bg</authorUrl>
 	<copyright></copyright>
-	<license>GNU/GPL</license>
-	<version>2.8.0</version>
-	<description>Hara School Site</description>
+	<license>FREE</license>
+	<version>3.2.1</version>
+	<description>Hara School Site 4 klas</description>
 	<files>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
@@ -27,6 +27,7 @@
 		<position>left</position>
 		<position>right</position>
 		<position>top</position>
+		<position>adds</position>
 		<position>user1</position>
 		<position>user2</position>
 		<position>user3</position>
